@@ -1,5 +1,5 @@
 .editor-default-block-appender {
-	input[type=text] {
+	button {
 		border: none;
 		background: none;
 		box-shadow: none;
@@ -10,15 +10,20 @@
 		line-height: $editor-line-height;
 		cursor: text;
 		max-width: none;	// fixes a bleed issue from the admin
+		text-align: left;
+
+		&:focus {
+			outline: 1px solid $light-gray-500;
+		}
 	}
 
-	&.is-visible-placeholder input[type=text] {
+	&.is-visible-placeholder button {
 		height: $text-editor-font-size * 4; // the height of an empty paragraph
 		color: $dark-gray-300;
 		outline: 1px solid transparent;
 		transition: 0.2s outline;
 
-		&:hover {
+		&:hover, &:focus {
 			outline: 1px solid $light-gray-500;
 		}
 	}

@@ -95,7 +95,7 @@
 	@include break-small() {
 		padding: 0 $block-mover-padding-visible;
 
-		input[type=text] {
+		button {
 			padding: 0 $block-padding;
 		}
 	}
